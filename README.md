@@ -19,5 +19,4 @@ Proyecto desarrollado en Java que implementa una lista enlazada para la gestión
 
 ## Autores
 
-David Rivera Valladares
-Jimena Montero Segura
+David Rivera Valladares y Jimena Montero Segura
