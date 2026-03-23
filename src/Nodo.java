@@ -81,24 +81,24 @@ public class Nodo {
         cantidad = nuevaCantidad;
     }
 
-    // Método que permite conectar un nodo con el siguiente
+    // Metodo que permite conectar un nodo con el siguiente
     public void setSiguiente(Nodo nuevoSiguiente) {
         siguiente = nuevoSiguiente;
     }
 
-    // Método para agregar una imagen al producto
+    // Metodo para agregar una imagen al producto
     public void agregarImagen(String rutaImagen) {
         listaImagenes.add(rutaImagen);
     }
 
-    // Método toString para mostrar la información del nodo
+    // Metodo toString para mostrar la información del nodo
     // Se utiliza cuando se imprime el objeto directamente
     public String toString() {
         return "\nNombre: " + nombre +
-               "\nPrecio: " + precio +
-               "\nCategoria: " + categoria +
-               "\nVencimiento: " + fechaVencimiento +
-               "\nCantidad: " + cantidad +
-               "\nImagenes: " + listaImagenes;
+                "\nPrecio: " + precio +
+                "\nCategoria: " + categoria +
+                "\nVencimiento: " + fechaVencimiento +
+                "\nCantidad: " + cantidad +
+                "\nImagenes: " + listaImagenes;
     }
 }

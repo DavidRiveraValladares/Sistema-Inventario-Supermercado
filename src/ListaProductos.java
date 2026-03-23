@@ -1,19 +1,19 @@
 public class ListaProductos {
 
-    // Clase que administra la lista enlazada de productos.
+    // Clase que administra la lista enlazada de productos
     // Contiene operaciones básicas de inserción, búsqueda, modificación y reporte
 
     private Nodo primero;
 
     public ListaProductos() {
-        primero = null; // Inicialmente la lista está vacía
+        primero = null; // Inicialmente la lista está vacia
     }
 
     private boolean estaVacia() {
         return primero == null; // Verificar si la lista no tiene elementos
     }
 
-    // Inserta un nuevo producto al inicio de la lista.
+    // Inserta un nuevo producto al inicio de la lista
     public void insertarNodoInicio(String nombre, double precio, String categoria, String fecha, int cantidad) {
         Nodo nodoInsertar = new Nodo(nombre, precio, categoria, fecha, cantidad);
         nodoInsertar.setSiguiente(primero);
@@ -50,7 +50,7 @@ public class ListaProductos {
         return temp;
     }
 
-    // Modifica el precio y cantidad de un producto existente.
+    // Modifica el precio y cantidad de un producto existente
     public boolean modificar(String nombreBuscar, double nuevoPrecio, int nuevaCantidad) {
         if (estaVacia()) {
             System.out.println("Lista vacia");
@@ -76,7 +76,7 @@ public class ListaProductos {
         return true;
     }
 
-    // Elimina un producto de la lista por nombre.
+    // Elimina un producto de la lista por nombre
     public boolean eliminar(String nombre) {
         if (estaVacia()) {
             return false;
